@@ -9,6 +9,8 @@ env:
   IMAGE_NAME: lab3
 
 jobs:
+  call_workflow_build_and_test:
+    uses: ./.github/workflows/build&test.yml
   push:
     runs-on: ubuntu-latest
     steps:
